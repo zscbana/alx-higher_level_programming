@@ -14,6 +14,6 @@ def roman_to_int(roman_string):
         'M': 1000
     }
     for x in reversed(roman_string):
-        num = dir(x)
+        num = dir[x]
         total += num if total < num * 5 else -num
     return total
