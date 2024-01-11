@@ -1,1 +1,0 @@
-# Tasks of Doubly linked list in C 
