@@ -6,7 +6,7 @@ def roman_to_int(roman_string):
     num = 0
     dir = {
         'I': 1,
-        'V': 1,
+        'V': 5,
         'X': 10,
         'L': 50,
         'C': 100,
