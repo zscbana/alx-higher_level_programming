@@ -4,7 +4,7 @@
 
 class Rectangle:
     """
-   A class that represents a rectangle.
+    A class that represents a rectangle.
     """
 
     def __init__(self, width=0, height=0):
@@ -61,3 +61,7 @@ class Rectangle:
             if col != self.height - 1:
                 to_print += '\n'
         return to_print
+
+    def __repr__(self):
+        """ Return a string representation of the rectangle """
+        return 'Rectangle({}, {})'.format(self.width, self.height)
