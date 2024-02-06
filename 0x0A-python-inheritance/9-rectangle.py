@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Module for Rectangle SubClass. """
+'''Module for Rectangle class.'''
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
@@ -12,10 +12,10 @@ class Rectangle(BaseGeometry):
         self.__width = width
         self.__height = height
 
-    def area():
-        '''Calculate the area of the rectangle.'''
+    def area(self):
+        '''Method which returns area of rectangle.'''
         return self.__width * self.__height
 
     def __str__(self):
-        '''Return string representation of object.'''
+        '''String representation method.'''
         return "[Rectangle] " + str(self.__width) + "/" + str(self.__height)
