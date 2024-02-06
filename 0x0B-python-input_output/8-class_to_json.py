@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-"""task 8."""
+""" a class object to JSON format."""
 
 
 def class_to_json(obj):
-    """Converts a class object to json format."""
+    """Convert a class object to JSON format."""
     return obj.__dict__
