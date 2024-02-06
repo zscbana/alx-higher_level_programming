@@ -6,4 +6,4 @@ import json
 def load_from_json_file(filename):
     """load data from a filename using the json module's loads() method."""
     with open(filename, "r") as file:
-        return json.loads(file.read())
+        return json.load(file.read())
