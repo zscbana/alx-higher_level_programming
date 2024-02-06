@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Module for mylist class. """
+""" Module for is_same_class method. """
 
 
 def is_same_class(obj, a_class):
