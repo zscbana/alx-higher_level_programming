@@ -5,7 +5,7 @@
 def pascal_triangle(n):
     """Returns the nth row of Pascal's triangle as a list."""
     if n <= 0:
-        return res == [[]]
+        return []
     res = [[1]]
     for x in range(n - 1):
         temp = [0] + res[-1] + [0]
