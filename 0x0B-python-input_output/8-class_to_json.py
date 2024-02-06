@@ -4,4 +4,4 @@
 
 def class_to_json(obj):
     """Converts a class object to json format."""
-    return onj.__dict__
+    return obj.__dict__
