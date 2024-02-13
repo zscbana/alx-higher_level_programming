@@ -36,6 +36,18 @@ class Base:
     @staticmethod
     def from_json_string(json_string):
         if json_string:
-            json.loads(json_string)
+            return json.loads(json_string)
         else:
             return "[]"
+
+    @classmethod
+    def create(cls, **dictionary):
+        if cls.__name__ == "Rectangle":
+            dummy_instance = cls(1, 1)
+        elif cls.__name__ == "Square":
+            dummy_instance = cls(1)
+        else:
+            raise ValueError("Unsupported class type")
+
+        dummy_instance.update(**dictionary)
+        return dummy_instance
