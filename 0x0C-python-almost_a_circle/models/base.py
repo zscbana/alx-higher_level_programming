@@ -38,7 +38,7 @@ class Base:
         if json_string:
             return json.loads(json_string)
         else:
-            return "[]"
+            return []
 
     @classmethod
     def create(cls, **dictionary):
@@ -51,3 +51,14 @@ class Base:
 
         dummy_instance.update(**dictionary)
         return dummy_instance
+
+    @classmethod
+    def load_from_file(cls):
+        file_name = cls.__name__ + ".json"
+        try:
+            with open(file_name, "r") as file:
+                json_string = file.read()
+                dict_list = cls.from_json_string(json_string)
+                return [cls.create(**dictionary) for dictionary in dict_list]
+        except FileNotFoundError:
+            return []
