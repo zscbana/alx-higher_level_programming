@@ -38,4 +38,4 @@ class Base:
         if json_string:
             json.loads(json_string)
         else:
-            return []
+            return "[]"
